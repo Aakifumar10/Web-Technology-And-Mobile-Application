@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rajalakshmi Engineering College - Online Notice Board</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal (Embedded) CSS -->
+    <style>
+        .main {
+            display: flex;
+            padding: 20px;
+        }
+
+        .left {
+            width: 30%;
+            background: #ffffff;
+            padding: 15px;
+        }
+
+        .right {
+            width: 70%;
+            background: #f9f9f9;
+            padding: 15px;
+        }
+
+        h2 {
+            color: #003366;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Rajalakshmi Engineering College</h1>
+    <p>Online College Notice Board</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Notices</a>
+    <a href="#">Departments</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="main">
+
+    <!-- Left Section -->
+    <div class="left">
+        <h2>Important Links</h2>
+        <ul>
+            <li><a href="https://www.rajalakshmi.org" target="_blank">REC Official Website</a></li>
+            <li><a href="https://www.ugc.ac.in" target="_blank">UGC</a></li>
+            <li><a href="https://www.aicte-india.org" target="_blank">AICTE</a></li>
+        </ul>
+
+        <h2>College Image (Hotspots)</h2>
+
+        <!-- Image Map with Hotspots -->
+        <img src="rec.jpg" width="250" usemap="#recmap" alt="REC Campus">
+
+        <map name="recmap">
+            <area shape="rect" coords="0,0,120,120"
+                  href="https://www.rajalakshmi.org/library/"
+                  target="_blank"
+                  alt="Library">
+
+            <area shape="rect" coords="130,0,250,120"
+                  href="https://www.rajalakshmi.org/departments/"
+                  target="_blank"
+                  alt="Departments">
+
+            <area shape="rect" coords="0,130,250,250"
+                  href="https://www.rajalakshmi.org/contact-us/"
+                  target="_blank"
+                  alt="Admin Block">
+        </map>
+
+        <h2>College Location</h2>
+
+        <!-- Embedded Map -->
+        <iframe
+            src="https://www.google.com/maps?q=Rajalakshmi+Engineering+College+Chennai&output=embed"
+            width="100%"
+            height="200"
+            style="border:1px solid #003366;">
+        </iframe>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <h2>Latest Notices</h2>
+
+        <!-- Inline CSS -->
+        <p style="color:red; font-weight:bold;">
+            📢 End Semester Examinations begin from 10th April
+        </p>
+
+        <p>Students are advised to check the notice board regularly.</p>
+
+        <h2>Notice Board</h2>
+
+        <!-- Frame -->
+        <iframe width="100%" height="180" style="border:1px solid #003366;"
+            srcdoc="
+            <h3>Important Announcements</h3>
+            <ul>
+                <li>Project Review: 22nd March</li>
+                <li>Technical Symposium: 28th March</li>
+                <li>College Holiday: 1st April</li>
+            </ul>
+            ">
+        </iframe>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Rajalakshmi Engineering College | All Rights Reserved
+</footer>
+
+</body>
+</html>
